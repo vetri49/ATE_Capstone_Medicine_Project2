@@ -1,0 +1,274 @@
+{
+	"id": "198e774e-70e9-45c8-99b7-a08f333aa95d",
+	"name": "Phase_End Postman Medicare Test",
+	"timestamp": "2024-01-25T11:33:59.737Z",
+	"collection_id": "32338972-35e313ce-c2ad-406d-b423-c3ffc6a8d574",
+	"folder_id": 0,
+	"environment_id": "32338972-a99c59ae-7f61-4ad3-ae3e-1e5904fb4360",
+	"totalPass": 24,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-01-25T11:33:58.401Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6446d3b9-e03e-4cdb-9a6a-a7b599e0a3c1",
+			"name": "Get Products",
+			"url": "http://localhost:9010/get-products",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Test the message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Test the message": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				6,
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Test the message": true
+				},
+				{
+					"Status code is 200": true,
+					"Test the message": true
+				}
+			]
+		},
+		{
+			"id": "d6dd4a5e-2d14-4986-a93a-5a1fe00bd756",
+			"name": "Get users",
+			"url": "http://localhost:9010/get-users",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Test the message ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Test the message ": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				3,
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Test the message ": true
+				},
+				{
+					"Status code is 200": true,
+					"Test the message ": true
+				}
+			]
+		},
+		{
+			"id": "142d8818-a0d5-47ec-89fc-8c88355695c6",
+			"name": "Create Product",
+			"url": "http://localhost:9010/add-product",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				3,
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": true
+				},
+				{
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "1ef746c1-30c1-490a-9281-71145763bb85",
+			"name": "Delete Product",
+			"url": "http://localhost:9010/delete-product?id=101",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Test with message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Test with message": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				3,
+				35
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Test with message": true
+				},
+				{
+					"Status code is 200": true,
+					"Test with message": true
+				}
+			]
+		},
+		{
+			"id": "8478ad3b-a3c5-468f-8046-f535d348fd11",
+			"name": "Update Product",
+			"url": "http://localhost:9010/update-product",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Test with message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Test with message": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				5,
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Test with message": true
+				},
+				{
+					"Status code is 200": true,
+					"Test with message": true
+				}
+			]
+		},
+		{
+			"id": "1978c0a1-b8fa-43eb-aab4-28a32f211f0c",
+			"name": "Update Status",
+			"url": "http://localhost:9010/update-product-status",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Test with message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Test with message": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				3,
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Test with message": true
+				},
+				{
+					"Status code is 200": true,
+					"Test with message": true
+				}
+			]
+		}
+	],
+	"count": 2,
+	"totalTime": 78,
+	"collection": {
+		"requests": [
+			{
+				"id": "6446d3b9-e03e-4cdb-9a6a-a7b599e0a3c1",
+				"method": "GET"
+			},
+			{
+				"id": "d6dd4a5e-2d14-4986-a93a-5a1fe00bd756",
+				"method": "GET"
+			},
+			{
+				"id": "142d8818-a0d5-47ec-89fc-8c88355695c6",
+				"method": "POST"
+			},
+			{
+				"id": "1ef746c1-30c1-490a-9281-71145763bb85",
+				"method": "DELETE"
+			},
+			{
+				"id": "8478ad3b-a3c5-468f-8046-f535d348fd11",
+				"method": "PUT"
+			},
+			{
+				"id": "1978c0a1-b8fa-43eb-aab4-28a32f211f0c",
+				"method": "PUT"
+			}
+		]
+	}
+}

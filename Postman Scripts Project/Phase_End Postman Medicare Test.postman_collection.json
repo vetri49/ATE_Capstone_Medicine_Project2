@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "35e313ce-c2ad-406d-b423-c3ffc6a8d574",
+		"name": "Phase_End Postman Medicare Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32338972",
+		"_collection_link": "https://crimson-comet-509853.postman.co/workspace/Postman_Assignment_002~6e756de5-8633-4951-b48f-a7c6c8b6f434/collection/32338972-35e313ce-c2ad-406d-b423-c3ffc6a8d574?action=share&source=collection_link&creator=32338972"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Test the message\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(101);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Host-URL}}/get-products",
+					"host": [
+						"{{Host-URL}}"
+					],
+					"path": [
+						"get-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Test the message \", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"4 Users Fetched Successfully.\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Host-URL}}/get-users",
+					"host": [
+						"{{Host-URL}}"
+					],
+					"path": [
+						"get-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"Disprin Added Successfully.\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 999,\r\n        \"image\": \"1.png\",\r\n        \"name\": \"Disprin\",\r\n        \"category\": \"medicine\",\r\n        \"brand\": \"BZ Medico\",\r\n        \"status\": 1,\r\n        \"price\": 100\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Host-URL}}/add-product",
+					"host": [
+						"{{Host-URL}}"
+					],
+					"path": [
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Test with message\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"Product with ID 101 Deleted Successfully.\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{Host-URL}}/delete-product?id=101",
+					"host": [
+						"{{Host-URL}}"
+					],
+					"path": [
+						"delete-product"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "101"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Test with message\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"Disprin+ Updated Successfully.\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 999,\r\n        \"image\": \"2.png\",\r\n        \"name\": \"Disprin+\",\r\n        \"category\": \"medicine\",\r\n        \"brand\": \"BZ Medico\",\r\n        \"status\": 1,\r\n        \"price\": 120\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Host-URL}}/update-product",
+					"host": [
+						"{{Host-URL}}"
+					],
+					"path": [
+						"update-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Test with message\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"Disprin+ Status Updated Successfully.\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 999,\r\n        \"image\": \"2.png\",\r\n        \"name\": \"Disprin+\",\r\n        \"category\": \"medicine\",\r\n        \"brand\": \"BZ Medico\",\r\n        \"status\": 0,\r\n        \"price\": 120\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Host-URL}}/update-product-status",
+					"host": [
+						"{{Host-URL}}"
+					],
+					"path": [
+						"update-product-status"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Host-URL",
+			"value": "http://localhost:9010",
+			"type": "string"
+		}
+	]
+}

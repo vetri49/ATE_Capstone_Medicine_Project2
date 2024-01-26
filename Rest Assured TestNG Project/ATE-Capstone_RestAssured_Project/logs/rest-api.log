@@ -1,0 +1,18 @@
+2024-01-26 13:03:14 INFO  AddProduct:19 Start :: Test to create a product 
+2024-01-26 13:03:16 INFO  AddProduct:48 Response :: {"code":101,"message":"Disprin+ Added Successfully.","products":{"id":999,"image":"2.png","name":"Disprin+","category":"medicine","brand":"BZ Medico","status":1,"price":120}}
+2024-01-26 13:03:16 INFO  AddProduct:49 End :: Test to create a product
+2024-01-26 13:03:16 INFO  DeleteMedicine:16 Start :: Test to delete product from the store
+2024-01-26 13:03:16 INFO  DeleteMedicine:29 Reponse :: {"code":101,"message":"Product with ID 999 Deleted Successfully."}
+2024-01-26 13:03:16 INFO  DeleteMedicine:30 End :: Test to delete product from the store
+2024-01-26 13:03:16 INFO  GetMedicine:16 Start :: Test to get all the products from the store
+2024-01-26 13:03:16 INFO  GetMedicine:28 Reponse :: {"timestamp":"2024-01-26T07:33:16.740+00:00","status":404,"error":"Not Found","path":"/get-prodcuts"}
+2024-01-26 13:03:16 INFO  GetMedicine:29 End :: Test to get all the products from the store
+2024-01-26 13:03:16 INFO  GetUsers:20 Start :: Test to get all the register users from the store
+2024-01-26 13:03:16 INFO  GetUsers:36 Reponse :: {"code":101,"message":"4 Users Fetched Successfully.","users":[{"name":"Admin","email":"admin@example.com","password":"admin123","type":1},{"name":"John Watson","email":"john@example.com","password":"john123","type":0},{"name":"Fionna Flynn","email":"fionna@example.com","password":"fionna123","type":0},{"name":"Sia Sen","email":"sia@example.com","password":"sia123","type":0}]}
+2024-01-26 13:03:16 INFO  GetUsers:37 End :: Test to get all the register users from the store
+2024-01-26 13:03:16 INFO  UpdateMedicine:30 Start :: Test to update the product in the store
+2024-01-26 13:03:16 INFO  UpdateMedicine:46 Reponse :: {"code":101,"message":"Disprin+ Updated Successfully.","product":{"id":999,"image":"2.png","name":"Disprin+","category":"medicine","brand":"BZ Medico","status":1,"price":120}}
+2024-01-26 13:03:16 INFO  UpdateMedicine:47 End :: Test to update the product in the store
+2024-01-26 13:03:16 INFO  UpdateMedicine:29 Start :: Test to update the product in the store
+2024-01-26 13:03:16 INFO  UpdateMedicine:45 Reponse :: {"code":101,"message":"Disprin+ Status Updated Successfully.","product":{"id":999,"image":"2.png","name":"Disprin+","category":"medicine","brand":"BZ Medico","status":0,"price":120}}
+2024-01-26 13:03:16 INFO  UpdateMedicine:46 End :: Test to update the product in the store
